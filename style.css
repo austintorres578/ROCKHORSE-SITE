@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+.desk-nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    border-bottom: solid gray;
+    width: 100%;
+    z-index: 99;
+}
+.desk-logo{
+    padding-left: 25px;
+}
+.desk-links ul{
+    display: flex;
+    height: 100%;
+}
+.desk-links ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: poppins;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.desk-links ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.desk-links ul li a:hover{
+    color: red;
+}
+.fb-icon{
+    padding-right: 25px;
+}
+.desk-hero-container{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.desk-hero-content{
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 80px;
+}
+.desk-hero-text p{
+color: white;
+font-weight: bold;
+font-size: 20px;
+margin-top: 45px;
+}
+
+.desk-hero-text button{
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 10px 50px;
+    transition: .5s;
+}
+.desk-hero-text button:hover{
+    color: white;
+    background-color: red;
+}
+.hero-image{
+    width: 100%;
+    height: 90%;
+    filter: grayscale();
+}
+.desk-hero-logo img{
+    filter: none;
+}
+.desk-about-container{
+    padding-top: 35px;
+}
+.about-us h3{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+.about-us p{
+    width: 60%;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto
+}
+.about-us button{
+    color: white;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-us-pics{
+    margin-left: auto;
+    margin-right: auto;
+}
