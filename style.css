@@ -43,7 +43,6 @@ body{
 .desk-hero-container{
     position: relative;
     padding-top: 70px;
-    padding-bottom: 50px;
 }
 .desk-hero-content{
     position:absolute;
@@ -76,35 +75,99 @@ margin-top: 45px;
 }
 .hero-image{
     width: 100%;
-    height: 90%;
+    height: 100%;
     filter: grayscale();
 }
 .desk-hero-logo img{
     filter: none;
 }
 .desk-about-container{
-    padding-top: 35px;
+    display: flex;
 }
-.about-us h3{
-    text-align: center;
-    font-weight: bold;
-    color: red;
-}
-.about-us p{
+.about-us-text-con{
     width: 60%;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto
-}
-.about-us button{
-    color: white;
+    text-align: center;
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 50px 60px 50px 60px;
 }
-.about-us-pics{
+.about-us-border{
+    background-color: white;
+    padding: 5px 60px 5px 60px;
+}
+.about-us-text-content{
+    background-color: white;
+    border: solid black;
+    margin: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about-us-text-content h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: red;
+    font-weight: bolder;
+}
+.about-us-text-content p{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.about-us-text-content button{
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+.about-us-text-content button:hover{
+    background-color: red;
+    color: white;
+}
+.about-us-images-con{
+    position: relative;
+    width: 40%;
+    background-color: red;
+}
+.about-us-images-content{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+}
+.about-us-images-content img{
+    border:solid 10px black;
+}
+.desk-song-list-con h3{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.song-list-years{
+    margin-top: 35px;
+}
+.song-list-years ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.song-list-years ul li button{
+    width: 125px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid black;
+    border-bottom: none;
+    background-color: white;
+}
+.song-list-dir-con{
     margin-left: auto;
     margin-right: auto;
+    height: 500px;
+    border: solid black;
+    width: 80%;
 }
