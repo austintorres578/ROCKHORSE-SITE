@@ -134,11 +134,14 @@ margin-top: 45px;
 }
 .about-us-images-content{
     position: absolute;
-    top: 20%;
+    top: 18%;
     right: 30%;
 }
 .about-us-images-content img{
     border:solid 10px black;
+}
+.desk-song-list-con{
+    padding-bottom: 60px;
 }
 .desk-song-list-con h3{
     text-align: center;
@@ -146,10 +149,11 @@ margin-top: 45px;
     margin-top: 30px;
 }
 .song-list-years{
-    margin-top: 35px;
+    margin-top: 50px;
 }
 .song-list-years ul{
-    padding-left: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-bottom: 0px;
     list-style: none;
     display: flex;
@@ -164,10 +168,73 @@ margin-top: 45px;
     border-bottom: none;
     background-color: white;
 }
-.song-list-dir-con{
+
+.song-list-catagories-con{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
+}
+.song-list-catagories{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.song-list-catagories div p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+.album-col{
     border: solid black;
-    width: 80%;
+}
+.song-col{
+    border-top: solid black;
+    border-bottom: solid black;
+}
+.genre-col{
+    border: solid black;
+}
+.seventies-song-list{
+    border-bottom: solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 70%;
+}
+.song-item-white{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.song-item-white div{
+    border: solid black;
+    text-align: center;
+}
+.song-item-white div img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.song-item-white div p{
+    padding-top: 25px;
+}
+.song-item-gray{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.song-item-gray div{
+    border: solid black;
+    background-color: lightgray;
+    text-align: center;
+}
+.song-item-gray div img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.song-item-gray div p{
+    padding-top: 25px;
 }
