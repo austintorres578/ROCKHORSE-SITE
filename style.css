@@ -240,6 +240,17 @@ margin-top: 45px;
     padding-top: 25px;
 }
 .eighties-song-list{
+    display: none;
+    border-bottom: solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 70%;
+}
+.nineties-song-list{
     border-bottom: solid black;
     margin-left: auto;
     margin-right: auto;
