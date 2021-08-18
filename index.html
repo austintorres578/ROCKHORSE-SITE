@@ -20,7 +20,7 @@
     <div class="desk-links">
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#">SONGS</a></li>
+            <li><a href="#song-section">SONGS</a></li>
             <li><a href="#">MEDIA</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
@@ -61,12 +61,12 @@
 </div>
 <div class="desk-song-list-con">
     <div class="desk-song-list-content">
-        <h3>SONG LIST</h3>
-        <div class="song-list-years">
+        <h3 style="color: red;">SONG LIST</h3>
+        <div id="song-section" class="song-list-years">
             <ul>
-                <li><button>70's</button></li>
-                <li><button>80's</button></li>
-                <li><button>90's+</button></li>
+                <li><button class="seventies-btn" id="seventies-btn">70's</button></li>
+                <li><button class="eighties-btn" id="eighties-btn">80's</button></li>
+                <li><button class="nineties-btn" id="nineties-btn">90's+</button></li>
             </ul>
         </div>
         <div>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="seventies-song-list">
+        <div class="seventies-song-list" id="seventies-song-list"style="display: block;">
             <div class="song-item-white">
                 <div>
                     <img src="C:\Users\19088\Documents\GitHub\ROCKHORSE-SITE\imgs\Album Covers\70s\ACDC-IALWTTT.jpg" alt="" height="60px" width="60px">
@@ -125,7 +125,7 @@
                     <p>Beatles / Come Together</p>
                 </div>
                 <div>
-                    <p>Rock and roll</p>
+                    <p>Rock and Roll</p>
                 </div>
             </div>
             <div class="song-item-white">
@@ -393,7 +393,7 @@
                 </div>
             </div>
         </div>
-        <div class="eighties-song-list">
+        <div class="eighties-song-list" id="eighties-song-list" style="display: none;">
             <div class="song-item-white">
                 <div>
                     <img src="C:\Users\19088\Documents\GitHub\ROCKHORSE-SITE\imgs\Album Covers\80s\Alana-Myles-Black-Velvet.jpg" alt="" height="60px" width="60px">
@@ -681,7 +681,7 @@
                 </div>
             </div>
         </div>
-        <div class="nineties-song-list">
+        <div class="nineties-song-list" id="nineties-song-list" style="display: none;">
             <div class="song-item-white">
                 <div>
                     <img src="C:\Users\19088\Documents\GitHub\ROCKHORSE-SITE\imgs\Album Covers\90s+\jagged-little-pill-5717d26787986.jpg" alt="" height="60px" width="60px">
@@ -903,6 +903,13 @@
                 </div>
             </div> 
         </div>
+    </div>
+</div>
+<div class="media-sec-con">
+    <div class="media-header">
+        <h3>MEDIA</h3>
+    </div>
+    <div class="media-video-slider">
     </div>
 </div>
 <script src="script.js"></script>

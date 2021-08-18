@@ -13,6 +13,7 @@ body{
     width: 100%;
     z-index: 99;
 }
+
 .desk-logo{
     padding-left: 25px;
 }
@@ -143,6 +144,7 @@ margin-top: 45px;
 .desk-song-list-con{
     padding-bottom: 60px;
 }
+
 .desk-song-list-con h3{
     text-align: center;
     font-weight: bolder;
@@ -168,6 +170,95 @@ margin-top: 45px;
     border-bottom: none;
     background-color: white;
 }
+@media(max-width:990px){
+    .desk-song-list-con .desk-song-list-content div .song-list-catagories-con{
+        width: 80%;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list{
+        width: 80%;
+    }
+    .desk-song-list-con .desk-song-list-content div .eighties-song-list{
+        width: 80%;
+    }
+    .desk-song-list-con .desk-song-list-content div .nineties-song-list{
+        width: 80%;
+    }
+}
+@media(max-width:770px){
+    .desk-song-list-con .desk-song-list-content div .song-list-catagories-con{
+        width: 85%;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list{
+        width: 85%;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-white{
+        font-size: 14px;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-gray{
+        font-size: 14px;
+    }
+    .desk-song-list-con .desk-song-list-content div .eighties-song-list{
+        width: 85%;
+    }
+    .desk-song-list-con .desk-song-list-content div .nineties-song-list{
+        width: 85%;
+    }
+
+}
+@media(max-width:540px){
+    .desk-song-list-con .desk-song-list-content div .song-list-catagories-con{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-white{
+        font-size: 14px;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-gray{
+        font-size: 14px;
+    }
+    .desk-song-list-con .desk-song-list-content div .eighties-song-list{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content div .nineties-song-list{
+        width: 90%;
+    }
+
+}
+@media(max-width:580px){
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .seventies-btn{
+        width: 100px;
+    }
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .eighties-btn{
+        width: 100px;
+    }
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .nineties-btn{
+        width: 100px;
+    }
+    .desk-song-list-con .desk-song-list-content .song-list-years ul{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media(max-width:410px){
+    .desk-song-list-con .desk-song-list-content .song-list-years ul{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media(max-width:350px){
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .seventies-btn{
+        width: 75px;
+    }
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .eighties-btn{
+        width: 75px;
+    }
+    .desk-song-list-con .desk-song-list-content .song-list-years ul li .nineties-btn{
+        width: 75px;
+    }
+}
+
 
 .song-list-catagories-con{
     width: 70%;
@@ -182,23 +273,27 @@ margin-top: 45px;
 
 .song-list-catagories div p{
     text-align: left;
+    font-weight: bold;
     padding-left: 20px;
     padding-top: 5px;
     margin-bottom: 0px;
     padding-bottom: 5px;
 }
 .album-col{
-    border: solid black;
+    border-top: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
 }
 .song-col{
     border-top: solid black;
     border-bottom: solid black;
 }
 .genre-col{
-    border: solid black;
+    border-top: solid black;
+    border-bottom: solid black;
+    border-right: solid black;
 }
 .seventies-song-list{
-    display: none;
     border-bottom: solid black;
     margin-left: auto;
     margin-right: auto;
@@ -211,6 +306,8 @@ margin-top: 45px;
 .song-item-white{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-left: solid black;
+    border-right: solid black;
 }
 .song-item-white div{
     border: solid black;
@@ -221,11 +318,14 @@ margin-top: 45px;
     margin-bottom: 10px;
 }
 .song-item-white div p{
+    font-weight: bold;
     padding-top: 25px;
 }
 .song-item-gray{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-left: solid black;
+    border-right: solid black;
 }
 .song-item-gray div{
     border: solid black;
@@ -237,10 +337,10 @@ margin-top: 45px;
     margin-bottom: 10px;
 }
 .song-item-gray div p{
+    font-weight: bold;
     padding-top: 25px;
 }
 .eighties-song-list{
-    display: none;
     border-bottom: solid black;
     margin-left: auto;
     margin-right: auto;
@@ -259,4 +359,39 @@ margin-top: 45px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     width: 70%;
+}
+.song-list-years ul li .seventies-btn{
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+    width: 125px;
+    color: white;
+    background-color: red;
+}
+.song-list-years ul li .eighties-btn{
+    width: 125px;
+    transition: .5s;
+    background-color: black;
+    color: white;
+}
+.song-list-years ul li .eighties-btn:hover{
+    background-color: white;
+    color: black;
+}
+.song-list-years ul li .nineties-btn{
+    width: 125px;
+    transition: .5s;
+    background-color: black;
+    color: white;
+}
+.song-list-years ul li .nineties-btn:hover{
+    background-color: white;
+    color: black;
+}
+.media-sec-con{
+    height: 800px;
+}
+.media-header{
+    padding-top: 20px;
+    color: red;
 }
