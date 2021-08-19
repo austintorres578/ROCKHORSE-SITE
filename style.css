@@ -3,10 +3,55 @@ body{
     padding: 0px;
     scroll-behavior: smooth;
 }
+
+@media(max-width:740px){
+    .desk-nav-con .desk-nav .desk-links ul li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .desk-nav-con .desk-nav .desk-links ul li a{
+        font-size: 18px;
+    }
+}
+@media(max-width:580px){
+    .desk-nav-con .desk-nav .desk-links ul li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .desk-nav-con .desk-nav .desk-links ul li a{
+        font-size: 14px;
+    }
+    .desk-nav-con .desk-nav .desk-logo a img{
+        height: 50px;
+        width: 50px;
+    }
+    .desk-nav-con .desk-nav .fb-icon a img{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media(max-width:395px){
+    .desk-nav-con .desk-nav .desk-logo a img{
+        height: 35px;
+        width: 35px;
+    }
+    .desk-nav-con .desk-nav .fb-icon a img{
+        height: 35px;
+        width: 35px;
+    }
+    .desk-nav-con .desk-nav .desk-links ul li a{
+        font-size: 12px;
+    }
+}
+
+
+.desk-nav-con{
+    text-align: center;
+}
 .desk-nav{
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     padding: 5px;
     border-bottom: solid gray;
@@ -17,20 +62,27 @@ body{
 .desk-logo{
     padding-left: 25px;
 }
+.desk-logo img{
+    height: 65px;
+    width: 65px;
+}
 .desk-links ul{
     display: flex;
+    justify-content: center;
     height: 100%;
+    padding-left: 0px;
 }
 .desk-links ul li{
     list-style: none;
     font-weight: bold;
-    font-size: 20px;
     font-family: poppins;
-    margin-right: 50px;
     margin-top: auto;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: auto;
 }
 .desk-links ul li a{
+    font-size: 20px;
     text-decoration: none;
     color: black;
     transition: .5s;
@@ -41,9 +93,13 @@ body{
 .fb-icon{
     padding-right: 25px;
 }
+.fb-icon img{
+    height: 65px;
+    width: 65px;
+}
 .desk-hero-container{
     position: relative;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 .desk-hero-content{
     position:absolute;
@@ -211,6 +267,7 @@ margin-top: 45px;
     }
     .desk-song-list-con .desk-song-list-content div .seventies-song-list{
         width: 90%;
+        height: 400px;
     }
     .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-white{
         font-size: 14px;
@@ -220,9 +277,11 @@ margin-top: 45px;
     }
     .desk-song-list-con .desk-song-list-content div .eighties-song-list{
         width: 90%;
+        height: 400px;
     }
     .desk-song-list-con .desk-song-list-content div .nineties-song-list{
         width: 90%;
+        height: 500px;
     }
 
 }
@@ -256,6 +315,12 @@ margin-top: 45px;
     }
     .desk-song-list-con .desk-song-list-content .song-list-years ul li .nineties-btn{
         width: 75px;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-white{
+        font-size: 12px;
+    }
+    .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-gray{
+        font-size: 12px;
     }
 }
 
