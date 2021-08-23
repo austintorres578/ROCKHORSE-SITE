@@ -131,12 +131,51 @@ margin-top: 45px;
     background-color: red;
 }
 .hero-image{
+    display: none;
+    filter: grayscale();
     width: 100%;
     height: 100%;
+}
+.mobile-hero{
     filter: grayscale();
+    width: 100%;
+    height: 100%;
 }
 .desk-hero-logo img{
     filter: none;
+}
+@media(max-width:1200px){
+    .desk-about-container .about-us-text-con{
+        width: 70%;
+    }
+    .desk-about-container .about-us-images-content{
+        top: 20%;
+        right: 15%;
+    }
+}
+@media(max-width: 1050px){
+    .desk-about-container .about-us-images-con .about-us-images-content img{
+        height: 300px;
+        width: 400px;
+    }
+    .desk-about-container .about-us-images-content{
+        top: 24%;
+        right: 20%;
+    }
+    .desk-about-container .about-us-text-con .about-us-border{
+        padding-left: 30px;
+    }
+}
+@media(max-width: 950px){
+    .desk-about-container{
+        display: none;
+    }
+    .about-us-text-con{
+        display: none;
+    }
+    .about-us-images-con{
+        display: none;
+    }
 }
 .desk-about-container{
     display: flex;
@@ -145,13 +184,14 @@ margin-top: 45px;
     width: 60%;
     text-align: center;
     background-color: black;
-    padding: 50px 60px 50px 60px;
+    padding: 50px 60px 50px 30px;
 }
 .about-us-border{
     background-color: white;
     padding: 5px 60px 5px 60px;
 }
 .about-us-text-content{
+    width: 400px;
     background-color: white;
     border: solid black;
     margin: 50px;
@@ -197,15 +237,169 @@ margin-top: 45px;
 .about-us-images-content img{
     border:solid 10px black;
 }
+.about-img{
+    height: 375px;
+    width: 475px;
+}
+
 .desk-song-list-con{
     padding-bottom: 60px;
+    margin-top: 20px;
 }
 
 .desk-song-list-con h3{
+    font-weight: bold;
     text-align: center;
     font-weight: bolder;
     margin-top: 30px;
 }
+
+@media(max-width:720px){
+    .tablet-about-us-text p{
+        font-size: 15px;
+    }
+}
+@media(max-width:700px){
+    body .tablet-about-us-con{
+        display: none;
+        height: 0px;
+    }
+    .tablet-about-us-text-con{
+        display: none;
+    }
+    .tablet-about-us-image-con{
+        display: none;
+    }
+}
+@media(min-width:950px){
+    body .tablet-about-us-con{
+        display: none;
+    }
+}
+
+.tablet-about-us-con{
+    display: flex;
+    height: 425px;
+}
+.tablet-about-us-text{
+    width: 80%;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tablet-about-us-text h3{
+    font-weight: bold;
+}
+.tablet-about-us-image-con{
+    background-color: red;
+    width: 50%;
+}
+.tablet-about-image{
+    display: block;
+    margin: auto auto auto auto;
+    padding-top: 80px;
+    height: 340px;
+    width: 90%;
+}
+.tablet-about-us-text-con{
+    border: solid 10px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tablet-about-us-text h3{
+    text-align: center;
+    margin-bottom: 25px;
+    color: red;
+}
+
+.tablet-about-us-text p{
+    font-weight: bold;
+}
+.tablet-about-us-text button{
+    display: block;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:700px){
+    body .mobile-about-us-con{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    body .mobile-about-us-text h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    body .mobile-about-us-text p{
+        font-size: 12px;
+    }
+    body .mobile-about-image{
+        height: 150px;
+        width: 200px;
+    }
+}
+.mobile-about-us-con{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+.mobile-about-us-image-con{
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.mobile-about-image{
+    display: block;
+    height: auto;
+    width: auto;
+    height:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-about-us-text h3{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mobile-about-us-text p{
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mobile-about-us-text button{
+    display: block;
+    border: none;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-about-us-text button:hover{
+    background-color: red;
+}
+
 .song-list-years{
     margin-top: 50px;
 }
