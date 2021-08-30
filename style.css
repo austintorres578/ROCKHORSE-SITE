@@ -4,6 +4,8 @@ body{
     scroll-behavior: smooth;
 }
 
+/*NAV SEC START*/
+
 @media(max-width:740px){
     .desk-nav-con .desk-nav .desk-links ul li{
         margin-left: 20px;
@@ -43,8 +45,6 @@ body{
         font-size: 12px;
     }
 }
-
-
 .desk-nav-con{
     text-align: center;
 }
@@ -98,6 +98,29 @@ body{
     height: 65px;
     width: 65px;
 }
+/*NAV SEC END*/
+
+/*HERO SEC START*/
+
+@media(max-width:992px){
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-text p{
+        font-size: 16px;
+    }
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo{
+        padding-top: 100px;
+    }
+}
+@media(max-width:775px){
+    .desk-hero-container .desk-hero-image .hero-image{
+        display: none;
+    }
+}
+@media(min-width:775px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        display: none;
+    }
+}
+
 .desk-hero-container{
     position: relative;
     padding-top: 60px;
@@ -138,14 +161,19 @@ margin-top: 45px;
     height: 100%;
 }
 .mobile-hero{
-    display: none;
     filter: grayscale();
     width: 100%;
     height: 100%;
 }
+
 .desk-hero-logo img{
     filter: none;
 }
+
+/*HERO SEC END*/
+
+/*ABOUT US SEC START*/
+
 @media(max-width:1200px){
     .desk-about-container .about-us-text-con{
         width: 70%;
@@ -180,6 +208,74 @@ margin-top: 45px;
         display: none;
     }
 }
+@media(max-width:800px){
+    body .tablet-about-image{
+        height: 300px;
+    }
+    body .tablet-about-us-image-con{
+        background-color: red;
+        padding-top: 60px;
+        width: 50%;
+    }
+}
+@media(max-width:750px){
+    .tablet-about-us-text{
+        font-size: 15px;
+    }
+    .tablet-about-us-text h3{
+        font-size: 20px;
+    }
+    body .tablet-about-image{
+        height: 275px;
+    }
+    body .tablet-about-us-image-con{
+        background-color: red;
+        padding-top: 75px;
+        width: 50%;
+    }
+}
+@media(max-width:720px){
+    .tablet-about-us-text p{
+        font-size: 15px;
+    }
+}
+@media(max-width:700px){
+    body .tablet-about-us-con{
+        display: none;
+        height: 0px;
+    }
+    .tablet-about-us-text-con{
+        display: none;
+    }
+    .tablet-about-us-image-con{
+        display: none;
+    }
+}
+@media(min-width:950px){
+    body .tablet-about-us-con{
+        display: none;
+    }
+}
+@media(min-width:700px){
+    body .mobile-about-us-con{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    body .mobile-about-us-text h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    body .mobile-about-us-text p{
+        font-size: 12px;
+    }
+    body .mobile-about-image{
+        height: 150px;
+        width: 200px;
+    }
+}
+
 .desk-about-container{
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
@@ -246,67 +342,6 @@ margin-top: 45px;
     height: 375px;
     width: 475px;
 }
-
-.desk-song-list-con{
-    padding-bottom: 60px;
-    margin-top: 20px;
-}
-
-.desk-song-list-con h3{
-    font-weight: bold;
-    text-align: center;
-    font-weight: bolder;
-    margin-top: 30px;
-}
-@media(max-width:800px){
-    body .tablet-about-image{
-        height: 300px;
-    }
-    body .tablet-about-us-image-con{
-        background-color: red;
-        padding-top: 60px;
-        width: 50%;
-    }
-}
-@media(max-width:750px){
-    .tablet-about-us-text{
-        font-size: 15px;
-    }
-    .tablet-about-us-text h3{
-        font-size: 20px;
-    }
-    body .tablet-about-image{
-        height: 275px;
-    }
-    body .tablet-about-us-image-con{
-        background-color: red;
-        padding-top: 75px;
-        width: 50%;
-    }
-}
-@media(max-width:720px){
-    .tablet-about-us-text p{
-        font-size: 15px;
-    }
-}
-@media(max-width:700px){
-    body .tablet-about-us-con{
-        display: none;
-        height: 0px;
-    }
-    .tablet-about-us-text-con{
-        display: none;
-    }
-    .tablet-about-us-image-con{
-        display: none;
-    }
-}
-@media(min-width:950px){
-    body .tablet-about-us-con{
-        display: none;
-    }
-}
-
 .tablet-about-us-con{
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
@@ -359,25 +394,6 @@ margin-top: 45px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
-@media(min-width:700px){
-    body .mobile-about-us-con{
-        display: none;
-    }
-}
-@media(max-width:350px){
-    body .mobile-about-us-text h3{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-    body .mobile-about-us-text p{
-        font-size: 12px;
-    }
-    body .mobile-about-image{
-        height: 150px;
-        width: 200px;
-    }
 }
 .mobile-about-us-con{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -432,26 +448,10 @@ margin-top: 45px;
     background-color: red;
 }
 
-.song-list-years{
-    margin-top: 50px;
-}
-.song-list-years ul{
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 0px;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-.song-list-years ul li button{
-    width: 125px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border: solid black;
-    border-bottom: none;
-    background-color: white;
-}
+/*ABOUT US SEC END*/
+
+/*SONG LIST SEC START*/
+
 @media(max-width:990px){
     .desk-song-list-con .desk-song-list-content div .song-list-catagories-con{
         width: 80%;
@@ -550,7 +550,38 @@ margin-top: 45px;
     }
 }
 
+.desk-song-list-con{
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
 
+.desk-song-list-con h3{
+    font-weight: bold;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.song-list-years{
+    margin-top: 50px;
+}
+.song-list-years ul{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.song-list-years ul li button{
+    width: 125px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid black;
+    border-bottom: none;
+    background-color: white;
+}
 .song-list-catagories-con{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
     width: 80%;
@@ -676,6 +707,11 @@ margin-top: 45px;
     background-color: black;
     color: white;
 }
+
+/*SONG LIST SEC END*/
+
+/*MEDIA SEC START*/
+
 .media-sec-con{
     height: 800px;
     margin-bottom: 50px;
@@ -982,6 +1018,11 @@ margin-top: 45px;
     height: 275px;
     width: 275px;
 }
+
+/*MEDIA SEC END*/
+
+/*CONTACT SEC START*/
+
 .contact-header{
     text-align: center;
 }
@@ -989,6 +1030,11 @@ margin-top: 45px;
     font-weight: bold;
     color: red;
 }
+
+/*CONTACT SEC END*/
+
+/*FOOTER START*/
+
 .footer-con{
     background-color: black;
     padding-top: 20px;
@@ -1000,3 +1046,5 @@ margin-top: 45px;
     margin-bottom: 0px;
     color: lightgray;
 }
+
+/*FOOTER END*/

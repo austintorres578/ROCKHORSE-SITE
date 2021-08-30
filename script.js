@@ -1,69 +1,75 @@
+/*MEDIA VIDEO SLIDER START*/
+
 var videoOne = document.getElementById("video-1");
 var videoTwo = document.getElementById("video-2");
 var videoThree = document.getElementById("video-3");
 
 var videoOneBtns = document.getElementById("video-1-btns");
-var videoOneLeft = document.getElementById("video-1-left");
-var videoOneRight = document.getElementById("video-1-right");
+var videoOneLeftBtn = document.getElementById("video-1-left");
+var videoOneRightBtn = document.getElementById("video-1-right");
 
 var videoTwoBtns = document.getElementById("video-2-btns");
-var videoTwoLeft = document.getElementById("video-2-left");
-var videoTwoRight = document.getElementById("video-2-right");
+var videoTwoLeftBtn = document.getElementById("video-2-left");
+var videoTwoRightBtn = document.getElementById("video-2-right");
 
 var videoThreeBtns = document.getElementById("video-3-btns");
-var videoThreeLeft = document.getElementById("video-3-left");
-var videoThreeRight = document.getElementById("video-3-right");
+var videoThreeLeftBtn = document.getElementById("video-3-left");
+var videoThreeRightBtn = document.getElementById("video-3-right");
 
-videoOneLeft.addEventListener("click",changeVideoThreeFromOne);
-videoOneRight.addEventListener("click", changeVideoTwoFromOne);
+videoOneLeftBtn.addEventListener("click",changeToVideoThreeFromOne);
+videoOneRightBtn.addEventListener("click", changeToVideoTwoFromOne);
 
-videoTwoLeft.addEventListener("click",changeVideoOneFromTwo);
-videoTwoRight.addEventListener("click",changeVideoThreeFromTwo);
+videoTwoLeftBtn.addEventListener("click",changeToVideoOneFromTwo);
+videoTwoRightBtn.addEventListener("click",changeToVideoThreeFromTwo);
 
-videoThreeLeft.addEventListener("click",changeVideoTwoFromThree);
-videoThreeRight.addEventListener("click",changeVideoOneFromThree);
+videoThreeLeftBtn.addEventListener("click",changeToVideoTwoFromThree);
+videoThreeRightBtn.addEventListener("click",changeToVideoOneFromThree);
 
-function changeVideoThreeFromOne(){
+function changeToVideoThreeFromOne(){
     videoOne.style.display="none";
     videoOneBtns.style.display="none";
     videoThree.style.display="block";
     videoThreeBtns.style.display="flex";
 };
 
-function changeVideoTwoFromOne(){
+function changeToVideoTwoFromOne(){
     videoOne.style.display="none";
     videoOneBtns.style.display="none";
     videoTwo.style.display="block";
     videoTwoBtns.style.display="flex";
 };
 
-function changeVideoOneFromTwo(){
+function changeToVideoOneFromTwo(){
     videoTwo.style.display="none";
     videoTwoBtns.style.display="none";
     videoOne.style.display="block";
     videoOneBtns.style.display="flex";
 };
 
-function changeVideoThreeFromTwo(){
+function changeToVideoThreeFromTwo(){
     videoTwo.style.display="none";
     videoTwoBtns.style.display="none";
     videoThree.style.display="block";
     videoThreeBtns.style.display="flex";
 };
 
-function changeVideoTwoFromThree(){
+function changeToVideoTwoFromThree(){
     videoThree.style.display="none";
     videoThreeBtns.style.display="none";
     videoTwo.style.display="block";
     videoTwoBtns.style.display="flex";
 };
 
-function changeVideoOneFromThree(){
+function changeToVideoOneFromThree(){
     videoThree.style.display="none";
     videoThreeBtns.style.display="none";
     videoOne.style.display="block";
     videoOneBtns.style.display="flex";
 };
+
+/*MEDIA VIDEO SLIDER END*/
+
+/*SONG LIST BTNS START*/
 
 var seventiesBtn = document.getElementById("seventies-btn");
 var eightiesBtn = document.getElementById("eighties-btn");
@@ -104,20 +110,24 @@ function changeToNine(){
     eightiesBtn.style.backgroundColor="black";
 };
 
-var imageOneLeft = document.getElementById("image-1-left");
-var imageOneRight = document.getElementById("image-1-right");
+/*SONG LIST BTNS END*/
 
-var imageTwoLeft = document.getElementById("image-2-left");
-var imageTwoRight = document.getElementById("image-2-right");
+/*MEDIA IMAGE SLIDER START*/
 
-var imageThreeLeft = document.getElementById("image-3-left");
-var imageThreeRight = document.getElementById("image-3-right");
+var imageOneLeftBtn = document.getElementById("image-1-left");
+var imageOneRightBtn = document.getElementById("image-1-right");
 
-var imageFourLeft = document.getElementById("image-4-left");
-var imageFourRight = document.getElementById("image-4-right");
+var imageTwoLeftBtn = document.getElementById("image-2-left");
+var imageTwoRightBtn = document.getElementById("image-2-right");
 
-var imageFiveLeft = document.getElementById("image-5-left");
-var imageFiveRight = document.getElementById("image-5-right");
+var imageThreeLeftBtn = document.getElementById("image-3-left");
+var imageThreeRightBtn = document.getElementById("image-3-right");
+
+var imageFourLeftBtn = document.getElementById("image-4-left");
+var imageFourRightBtn = document.getElementById("image-4-right");
+
+var imageFiveLeftBtn = document.getElementById("image-5-left");
+var imageFiveRightBtn = document.getElementById("image-5-right");
 
 var sliderImagesOne = document.getElementById("desk-media-images-content-one");
 var sliderImagesTwo = document.getElementById("desk-media-images-content-two");
@@ -125,20 +135,20 @@ var sliderImagesThree = document.getElementById("desk-media-images-content-three
 var sliderImagesFour = document.getElementById("desk-media-images-content-four");
 var sliderImagesFive = document.getElementById("desk-media-images-content-five");
 
-imageOneLeft.addEventListener("click",slideToImageFiveFromOne);
-imageOneRight.addEventListener("click",slideToImageTwoFromOne);
+imageOneLeftBtn.addEventListener("click",slideToImageFiveFromOne);
+imageOneRightBtn.addEventListener("click",slideToImageTwoFromOne);
 
-imageTwoLeft.addEventListener("click",slideToImageOneFromTwo);
-imageTwoRight.addEventListener("click",slideToImageThreeFromTwo);
+imageTwoLeftBtn.addEventListener("click",slideToImageOneFromTwo);
+imageTwoRightBtn.addEventListener("click",slideToImageThreeFromTwo);
 
-imageThreeLeft.addEventListener("click",slideToImageTwoFromThree);
-imageThreeRight.addEventListener("click",slideToImageFourFromThree);
+imageThreeLeftBtn.addEventListener("click",slideToImageTwoFromThree);
+imageThreeRightBtn.addEventListener("click",slideToImageFourFromThree);
 
-imageFourLeft.addEventListener("click",slideToImageThreeFromFour);
-imageFourRight.addEventListener("click",slideToImageFiveFromFour);
+imageFourLeftBtn.addEventListener("click",slideToImageThreeFromFour);
+imageFourRightBtn.addEventListener("click",slideToImageFiveFromFour);
 
-imageFiveLeft.addEventListener("click",slideToImageFourFromFive);
-imageFiveRight.addEventListener("click",slidetoImageOneFromFive);
+imageFiveLeftBtn.addEventListener("click",slideToImageFourFromFive);
+imageFiveRightBtn.addEventListener("click",slidetoImageOneFromFive);
 
 function slideToImageFiveFromOne(){
     sliderImagesOne.style.display="none";
@@ -181,3 +191,5 @@ function slidetoImageOneFromFive(){
     sliderImagesFive.style.display="none";
     sliderImagesOne.style.display="flex";
 };
+
+/*MEDIA IMAGE SLIDER END*/
