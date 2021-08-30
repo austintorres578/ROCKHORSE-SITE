@@ -103,3 +103,81 @@ function changeToNine(){
     eightiesSongList.style.display="none";
     eightiesBtn.style.backgroundColor="black";
 };
+
+var imageOneLeft = document.getElementById("image-1-left");
+var imageOneRight = document.getElementById("image-1-right");
+
+var imageTwoLeft = document.getElementById("image-2-left");
+var imageTwoRight = document.getElementById("image-2-right");
+
+var imageThreeLeft = document.getElementById("image-3-left");
+var imageThreeRight = document.getElementById("image-3-right");
+
+var imageFourLeft = document.getElementById("image-4-left");
+var imageFourRight = document.getElementById("image-4-right");
+
+var imageFiveLeft = document.getElementById("image-5-left");
+var imageFiveRight = document.getElementById("image-5-right");
+
+var sliderImagesOne = document.getElementById("desk-media-images-content-one");
+var sliderImagesTwo = document.getElementById("desk-media-images-content-two");
+var sliderImagesThree = document.getElementById("desk-media-images-content-three");
+var sliderImagesFour = document.getElementById("desk-media-images-content-four");
+var sliderImagesFive = document.getElementById("desk-media-images-content-five");
+
+imageOneLeft.addEventListener("click",slideToImageFiveFromOne);
+imageOneRight.addEventListener("click",slideToImageTwoFromOne);
+
+imageTwoLeft.addEventListener("click",slideToImageOneFromTwo);
+imageTwoRight.addEventListener("click",slideToImageThreeFromTwo);
+
+imageThreeLeft.addEventListener("click",slideToImageTwoFromThree);
+imageThreeRight.addEventListener("click",slideToImageFourFromThree);
+
+imageFourLeft.addEventListener("click",slideToImageThreeFromFour);
+imageFourRight.addEventListener("click",slideToImageFiveFromFour);
+
+imageFiveLeft.addEventListener("click",slideToImageFourFromFive);
+imageFiveRight.addEventListener("click",slidetoImageOneFromFive);
+
+function slideToImageFiveFromOne(){
+    sliderImagesOne.style.display="none";
+    sliderImagesFive.style.display="flex";
+};
+
+function slideToImageTwoFromOne(){
+    sliderImagesOne.style.display="none";
+    sliderImagesTwo.style.display="flex";
+};
+function slideToImageOneFromTwo(){
+    sliderImagesTwo.style.display="none";
+    sliderImagesOne.style.display="flex";
+};
+function slideToImageThreeFromTwo(){
+    sliderImagesTwo.style.display="none";
+    sliderImagesThree.style.display="flex";
+};
+function slideToImageTwoFromThree(){
+    sliderImagesThree.style.display="none";
+    sliderImagesTwo.style.display="flex";
+};
+function slideToImageFourFromThree(){
+    sliderImagesThree.style.display="none";
+    sliderImagesFour.style.display="flex";
+};
+function slideToImageThreeFromFour(){
+    sliderImagesFour.style.display="none";
+    sliderImagesThree.style.display="flex";
+};
+function slideToImageFiveFromFour(){
+    sliderImagesFour.style.display="none";
+    sliderImagesFive.style.display="flex";
+};
+function slideToImageFourFromFive(){
+    sliderImagesFive.style.display="none";
+    sliderImagesFour.style.display="flex";
+};
+function slidetoImageOneFromFive(){
+    sliderImagesFive.style.display="none";
+    sliderImagesOne.style.display="flex";
+};
