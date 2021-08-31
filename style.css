@@ -525,7 +525,16 @@ margin-right: auto;
 /*ABOUT US SEC END*/
 
 /*SONG LIST SEC START*/
-
+@media(min-width:992px){
+    .desk-song-list-con .desk-song-list-content .seventies-song-list .song-list-toggle-con .song-list-toggle-touch{
+        display: none;
+    }
+}
+@media(max-width:992px){
+    .desk-song-list-con .desk-song-list-content .seventies-song-list .song-list-toggle-con .song-list-toggle-click{
+        display: none;
+    }
+}
 @media(max-width:990px){
     .desk-song-list-con .desk-song-list-content div .song-list-catagories-con{
         width: 80%;
@@ -581,7 +590,7 @@ margin-right: auto;
     }
     .desk-song-list-con .desk-song-list-content div .nineties-song-list{
         width: 90%;
-        height: 500px;
+        height: 400px;
     }
 
 }
@@ -598,6 +607,20 @@ margin-right: auto;
     .desk-song-list-con .desk-song-list-content .song-list-years ul{
         padding-left: 50px;
         padding-right: 50px;
+    }
+}
+@media(max-width:425px){
+    .desk-song-list-con .desk-song-list-content .song-list-catagories-con{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content .seventies-song-list{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content .eighties-song-list{
+        width: 90%;
+    }
+    .desk-song-list-con .desk-song-list-content .nineties-song-list{
+        width: 90%;
     }
 }
 @media(max-width:410px){
@@ -690,7 +713,59 @@ margin-right: auto;
     border-bottom: solid black;
     border-right: solid black;
 }
+
+.song-list-toggle-con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black;
+    width: 100%;
+    height: 100%;
+    font-size: 45px;
+    background-color: transparent;
+    z-index: 3;
+}
+.song-list-toggle-click{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+.song-list-toggle-click p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.song-list-toggle-touch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+.song-list-toggle-touch p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.song-blur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    filter: blur(5px);
+}
 .seventies-song-list{
+    position: relative;
     border-bottom: solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
@@ -698,8 +773,10 @@ margin-right: auto;
     height: 550px;
     overflow: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     width: 80%;
+    z-index: 1;
 }
 .song-item-white{
     display: grid;
@@ -787,7 +864,6 @@ margin-right: auto;
 /*MEDIA SEC START*/
 
 .media-sec-con{
-    display: none;
     height: 800px;
     margin-bottom: 50px;
 }

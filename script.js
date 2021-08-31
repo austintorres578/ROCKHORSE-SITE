@@ -1,3 +1,68 @@
+/*SONG LIST BTNS START*/
+
+var seventiesBtn = document.getElementById("seventies-btn");
+var eightiesBtn = document.getElementById("eighties-btn");
+var ninetiesBtn = document.getElementById("nineties-btn");
+
+var seventiesSongList = document.getElementById("seventies-song-list");
+var eightiesSongList = document.getElementById("eighties-song-list");
+var ninetiesSongList = document.getElementById("nineties-song-list");
+
+var songListToggleCon =document.getElementById("song-list-toggle-con");
+var songListToggleClick = document.getElementById("song-list-toggle-click");
+var songListToggleTouch = document.getElementById("song-list-toggle-touch");
+var songBlur = document.getElementById("song-blur");
+
+seventiesBtn.addEventListener("click",changeToSeven);
+eightiesBtn.addEventListener("click",changeToeight);
+ninetiesBtn.addEventListener("click",changeToNine);
+songListToggleClick.addEventListener("click", disableToggle);
+songListToggleTouch.addEventListener("click", disableToggle)
+
+function changeToSeven(){
+    seventiesBtn.style.backgroundColor="red";
+    seventiesSongList.style.display="block";
+    seventiesSongList.style.overflowY="auto"
+    eightiesSongList.style.display="none";
+    eightiesBtn.style.backgroundColor="black";
+    ninetiesSongList.style.display="none";
+    ninetiesBtn.style.backgroundColor="black";
+    songListToggleCon.style.display="none";
+    songBlur.style.filter="blur(0)";
+};
+
+function changeToeight(){
+    eightiesSongList.style.display="block";
+    eightiesBtn.style.backgroundColor="red";
+    seventiesBtn.style.backgroundColor="black";
+    seventiesSongList.style.display="none";
+    ninetiesSongList.style.display="none";
+    ninetiesBtn.style.backgroundColor="black";
+    seventiesSongList.style.overflowY="auto"
+    songListToggleCon.style.display="none";
+    songBlur.style.filter="blur(0)";
+};
+
+function changeToNine(){
+    ninetiesSongList.style.display="block";
+    ninetiesBtn.style.backgroundColor="red";
+    seventiesBtn.style.backgroundColor="black";
+    seventiesSongList.style.display="none";
+    eightiesSongList.style.display="none";
+    eightiesBtn.style.backgroundColor="black";
+    seventiesSongList.style.overflowY="auto"
+    songListToggleCon.style.display="none";
+    songBlur.style.filter="blur(0)";
+};
+
+function disableToggle(){
+    seventiesSongList.style.overflowY="auto"
+    songListToggleCon.style.display="none";
+    songBlur.style.filter="blur(0)";
+}
+
+/*SONG LIST BTNS END*/
+
 /*MEDIA VIDEO SLIDER START*/
 
 var videoOne = document.getElementById("video-1");
@@ -68,49 +133,6 @@ function changeToVideoOneFromThree(){
 };
 
 /*MEDIA VIDEO SLIDER END*/
-
-/*SONG LIST BTNS START*/
-
-var seventiesBtn = document.getElementById("seventies-btn");
-var eightiesBtn = document.getElementById("eighties-btn");
-var ninetiesBtn = document.getElementById("nineties-btn");
-
-var seventiesSongList = document.getElementById("seventies-song-list");
-var eightiesSongList = document.getElementById("eighties-song-list");
-var ninetiesSongList = document.getElementById("nineties-song-list");
-
-seventiesBtn.addEventListener("click",changeToSeven);
-eightiesBtn.addEventListener("click",changeToeight);
-ninetiesBtn.addEventListener("click",changeToNine);
-
-function changeToSeven(){
-    seventiesBtn.style.backgroundColor="red";
-    seventiesSongList.style.display="block";
-    eightiesSongList.style.display="none";
-    eightiesBtn.style.backgroundColor="black";
-    ninetiesSongList.style.display="none";
-    ninetiesBtn.style.backgroundColor="black";
-};
-
-function changeToeight(){
-    eightiesSongList.style.display="block";
-    eightiesBtn.style.backgroundColor="red";
-    seventiesBtn.style.backgroundColor="black";
-    seventiesSongList.style.display="none";
-    ninetiesSongList.style.display="none";
-    ninetiesBtn.style.backgroundColor="black";
-};
-
-function changeToNine(){
-    ninetiesSongList.style.display="block";
-    ninetiesBtn.style.backgroundColor="red";
-    seventiesBtn.style.backgroundColor="black";
-    seventiesSongList.style.display="none";
-    eightiesSongList.style.display="none";
-    eightiesBtn.style.backgroundColor="black";
-};
-
-/*SONG LIST BTNS END*/
 
 /*MEDIA IMAGE SLIDER START*/
 
