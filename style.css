@@ -3,7 +3,6 @@ body{
     padding: 0px;
     scroll-behavior: smooth;
 }
-
 /*NAV SEC START*/
 
 @media(max-width:740px){
@@ -34,15 +33,20 @@ body{
 }
 @media(max-width:395px){
     .desk-nav-con .desk-nav .desk-logo a img{
-        height: 35px;
-        width: 35px;
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
     }
     .desk-nav-con .desk-nav .fb-icon a img{
-        height: 35px;
-        width: 35px;
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
     }
     .desk-nav-con .desk-nav .desk-links ul li a{
         font-size: 12px;
+    }
+    .desk-nav{
+        height: 60px;
     }
 }
 .desk-nav-con{
@@ -103,9 +107,6 @@ body{
 /*HERO SEC START*/
 
 @media(max-width:992px){
-    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-text p{
-        font-size: 16px;
-    }
     .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo{
         padding-top: 100px;
     }
@@ -114,16 +115,61 @@ body{
     .desk-hero-container .desk-hero-image .hero-image{
         display: none;
     }
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo img{
+        height: 30%;
+        width: 30%;
+    }
 }
 @media(min-width:775px){
     .desk-hero-container .desk-hero-image .mobile-hero{
         display: none;
     }
 }
+@media(max-width:650px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        height: 600px;
+        width: 120vw;
+    }
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo img{
+        height: 35%;
+        width: 35%;
+    }
+}
+@media(max-width:550px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        width: 140vw;
+    }
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo img{
+        height: 40%;
+        width: 40%;
+    }
+}
+@media(max-width:480px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        height: 500px;
+    }
+}
+@media(max-width:450px){
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-logo img{
+        height: 50%;
+        width: 50%;
+    }
+    .desk-hero-container .desk-hero-image .desk-hero-content .desk-hero-text p{
+        font-size: 17px;
+        width: 200px;
+    }
+}
+@media(max-width:390px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        width: 150vw;
+    }
+    
+}
 
 .desk-hero-container{
     position: relative;
-    padding-top: 60px;
+    padding-top: 50px;
+    overflow: hidden;
 }
 .desk-hero-content{
     position:absolute;
@@ -133,11 +179,17 @@ body{
     transform: translate(-50%, -50%);
     padding-bottom: 80px;
 }
+.desk-hero-logo img{
+    height: 25%;
+    width: 25%;
+}
 .desk-hero-text p{
 color: white;
 font-weight: bold;
 font-size: 20px;
 margin-top: 45px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .desk-hero-text button{
@@ -155,7 +207,6 @@ margin-top: 45px;
     background-color: white;
 }
 .hero-image{
-    display: block;
     filter: grayscale();
     width: 100%;
     height: 100%;
@@ -261,6 +312,33 @@ margin-top: 45px;
         display: none;
     }
 }
+@media(max-width:450px){
+    .desk-hero-text button{
+        padding: 5px 40px;
+    }
+    .mobile-about-us-con .mobile-about-us-text-con .mobile-about-us-text h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mobile-about-us-con .mobile-about-us-text-con .mobile-about-us-text button{
+        margin-top: 0px;
+    }
+    body .mobile-about-image{
+        height: 180px;
+        width: 260px;
+    }
+@media(max-width:425px){
+    body .mobile-about-us-con{
+        width: 90%;
+    }
+}
+@media(max-width:370px){
+    body .mobile-about-image{
+        height: 165px;
+        width: 240px;
+    }
+}    
+}
 @media(max-width:350px){
     body .mobile-about-us-text h3{
         margin-top: 10px;
@@ -268,11 +346,7 @@ margin-top: 45px;
         font-size: 18px;
     }
     body .mobile-about-us-text p{
-        font-size: 12px;
-    }
-    body .mobile-about-image{
-        height: 150px;
-        width: 200px;
+        font-size: 14px;
     }
 }
 
@@ -713,6 +787,7 @@ margin-top: 45px;
 /*MEDIA SEC START*/
 
 .media-sec-con{
+    display: none;
     height: 800px;
     margin-bottom: 50px;
 }
