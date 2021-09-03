@@ -43,7 +43,11 @@ body{
         width: 30px;
     }
     .desk-nav-con .desk-nav .desk-links ul li a{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .desk-nav-con .desk-nav .desk-links ul li{
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .desk-nav{
         height: 60px;
@@ -161,7 +165,12 @@ body{
 }
 @media(max-width:390px){
     .desk-hero-container .desk-hero-image .mobile-hero{
-        width: 150vw;
+        width: 170vw;
+    }
+}
+@media(max-width:340px){
+    .desk-hero-container .desk-hero-image .mobile-hero{
+        width: 180vw;
     }
     
 }
@@ -645,6 +654,15 @@ margin-right: auto;
     .desk-song-list-con .desk-song-list-content div .seventies-song-list .song-item-gray{
         font-size: 12px;
     }
+    .desk-song-list-con .desk-song-list-content .seventies-song-list{
+        height: 450px;
+    }
+    .desk-song-list-con .desk-song-list-content .eighties-song-list{
+        height: 450px;
+    }
+    .desk-song-list-con .desk-song-list-content .nineties-song-list{
+        height: 450px;
+    }
 }
 
 .desk-song-list-con{
@@ -862,6 +880,142 @@ margin-right: auto;
 /*SONG LIST SEC END*/
 
 /*MEDIA SEC START*/
+@media(max-width:965px){
+    .desk-media-images-con{
+        display: none;
+    }
+}
+@media(min-width:965px){
+    .mobile-media-images-con{
+        display: none;
+    }
+}
+@media(max-width:665px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 510px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 510px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 510px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 610px;
+    }
+}
+ @media(max-width:610px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 460px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 460px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 460px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 560px;
+    }
+ }
+ @media(max-width:560px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 410px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 410px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 410px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 510px;
+    }
+ }
+ @media(max-width:510px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 360px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 360px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 360px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 460px;
+    }
+ }
+ @media(max-width:460px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 310px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 310px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 310px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 410px;
+    }
+ }
+ @media(max-width:410px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 260px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 260px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 260px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 360px;
+    }
+ }
+ @media(max-width:360px){
+    .media-sec-con .media-video-slider .video-1{
+        height: 265px;
+        width: 210px;
+    }
+    .media-sec-con .media-video-slider .video-2{
+        height: 265px;
+        width: 210px;
+    }
+    .media-sec-con .media-video-slider .video-3{
+        height: 265px;
+        width: 210px;
+    }
+    .media-sec-con .media-video-slider{
+        height: 300px;
+        width: 310px;
+    }
+ }
 
 .media-sec-con{
     height: 800px;
@@ -869,7 +1023,6 @@ margin-right: auto;
 }
 .media-header{
     text-align: center;
-    padding-top: 20px;
     margin-bottom: 40px;
     color: red;
 }
@@ -882,11 +1035,16 @@ margin-right: auto;
     margin-left: auto;
     margin-right: auto;
 }
+.media-video-slider iframe{
+    height: 315px;
+    width: 560px;
+}
 .media-slider-btns{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 .video-1{
     display: block;
@@ -897,7 +1055,6 @@ margin-right: auto;
 .video-1-btns{
     display: flex;
     justify-content: space-between;
-    width: 650px;
 }
 .video-1-left{
     font-size: 26px;
@@ -928,7 +1085,6 @@ margin-right: auto;
 .video-2-btns{
     display: none;
     justify-content: space-between;
-    width: 650px;
 }
 .video-2-left{
     font-size: 26px;
@@ -947,7 +1103,7 @@ margin-right: auto;
 .video-2-left:hover{
     color: red;
  }
- .video-2-right:hover{
+.video-2-right:hover{
      color: red;
  }
 .video-3{
@@ -959,7 +1115,6 @@ margin-right: auto;
 .video-3-btns{
     display: none;
     justify-content: space-between;
-    width: 650px;
 }
 .video-3-left{
     font-size: 26px;
@@ -1168,6 +1323,24 @@ margin-right: auto;
 .desk-media-images-content-five img:hover{
     height: 275px;
     width: 275px;
+}
+.mobile-media-images-con{
+    margin-top: 75px;
+}
+.mobile-media-images-content{
+    display: flex;
+    list-style: none;
+    width: 95%;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.mobile-media-images-content li img{
+    height: 225px;
+    width: 225px;
+    margin-right: 5px;
 }
 
 /*MEDIA SEC END*/
