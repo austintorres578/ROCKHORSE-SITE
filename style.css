@@ -377,7 +377,7 @@ margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     width: 400px;
     background-color: white;
-    border: solid black;
+    padding-top: 10px;
     margin: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -737,7 +737,6 @@ margin-right: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid black;
     width: 100%;
     height: 100%;
     font-size: 45px;
@@ -784,7 +783,6 @@ margin-right: auto;
 }
 .seventies-song-list{
     position: relative;
-    border-bottom: solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
     margin-right: auto;
@@ -799,11 +797,9 @@ margin-right: auto;
 .song-item-white{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-left: solid black;
-    border-right: solid black;
 }
 .song-item-white div{
-    border: solid black;
+    border: solid 1px black;
     text-align: center;
 }
 .song-item-white div img{
@@ -817,11 +813,9 @@ margin-right: auto;
 .song-item-gray{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-left: solid black;
-    border-right: solid black;
 }
 .song-item-gray div{
-    border: solid black;
+    border: solid 1px black;
     background-color: lightgray;
     text-align: center;
 }
@@ -834,7 +828,6 @@ margin-right: auto;
     padding-top: 25px;
 }
 .eighties-song-list{
-    border-bottom: solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
     margin-right: auto;
@@ -845,7 +838,6 @@ margin-right: auto;
     width: 80%;
 }
 .nineties-song-list{
-    border-bottom: solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
     margin-right: auto;
@@ -1018,8 +1010,8 @@ margin-right: auto;
  }
 
 .media-sec-con{
-    height: 800px;
-    margin-bottom: 50px;
+    height: 775px;
+    margin-bottom: 30px;
 }
 .media-header{
     text-align: center;
@@ -1140,7 +1132,7 @@ margin-right: auto;
     font-weight: bold;
 }
 .desk-media-images-con{
-    margin-top: 75px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -1347,12 +1339,12 @@ margin-right: auto;
 
 /*CONTACT SEC START*/
 
-.contact-header{
-    text-align: center;
-}
-.contact-header h3{
-    font-weight: bold;
-    color: red;
+.cognito{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .5);
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
 }
 
 /*CONTACT SEC END*/
@@ -1363,6 +1355,7 @@ margin-right: auto;
     background-color: black;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 100px;
     text-align: center;
     width: 100%;
 }
