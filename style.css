@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
 }
 /*NAV SEC START*/
 
@@ -84,7 +83,7 @@ body{
 .desk-links ul li{
     list-style: none;
     font-weight: bold;
-    font-family: poppins;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: auto;
     margin-left: 30px;
     margin-right: 30px;
@@ -203,8 +202,8 @@ margin-right: auto;
 
 .desk-hero-text button{
     border: none;
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 16px;
     font-weight: bold;
     margin-top: 25px;
@@ -212,8 +211,8 @@ margin-right: auto;
     transition: .5s;
 }
 .desk-hero-text button:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: red;
 }
 .hero-image{
     filter: grayscale();
@@ -790,7 +789,6 @@ margin-right: auto;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    scroll-behavior: smooth;
     width: 80%;
     z-index: 1;
 }
@@ -803,6 +801,8 @@ margin-right: auto;
     text-align: center;
 }
 .song-item-white div img{
+    height: 60px;
+    width: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -820,6 +820,8 @@ margin-right: auto;
     text-align: center;
 }
 .song-item-gray div img{
+    height: 60px;
+    width: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -828,23 +830,23 @@ margin-right: auto;
     padding-top: 25px;
 }
 .eighties-song-list{
+    display: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
     margin-right: auto;
     height: 550px;
     overflow: auto;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     width: 80%;
 }
 .nineties-song-list{
+    display: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
     margin-left: auto;
     margin-right: auto;
     height: 550px;
     overflow: auto;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     width: 80%;
 }
 .song-list-years ul li .seventies-btn{
@@ -1136,7 +1138,7 @@ margin-right: auto;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: fit-content;
+    height: 150px;
     padding-top: 5px;
 }
 .desk-media-images-content-one{
@@ -1338,14 +1340,74 @@ margin-right: auto;
 /*MEDIA SEC END*/
 
 /*CONTACT SEC START*/
-
-.cognito{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .5);
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 90%;
+@media(max-width:620px){
+ .contact-sec-con .contact-sec{
+        width: 90%;
+        height: 500px;
+    }
+ .contact-sec div textarea{
+    height: 140px;
 }
+.contact-sec-con h3{
+    margin-bottom: 0px;
+}
+}
+.contact-sec-con{
+    height: fit-content;
+    text-align: center;
+}
+.contact-sec-con h3{
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: red;
+}
+.contact-sec{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.5);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 600px;
+    height: 610px;
+    padding: 20px;
+}
+.contact-sec div{
+    margin-bottom: 10px;
+}
+.contact-sec div p{
+    font-weight: bold;
+}
+.contact-sec div label{
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.contact-sec div input{
+    width: 100%;
+    border: solid gray;
+}
+.contact-sec div textarea{
+    width: 100%;
+    border: solid gray;
+}
+.contact-button{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact-button button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    transition: .5s;
+}
+.contact-button button:hover{
+    background-color: red;
+}
+
 
 /*CONTACT SEC END*/
 
