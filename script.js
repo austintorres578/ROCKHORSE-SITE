@@ -136,6 +136,8 @@ function changeToVideoOneFromThree(){
 
 /*MEDIA IMAGE SLIDER START*/
 
+let activeMediaImage = document.getElementById("active-media-image");
+
 var imageOneLeftBtn = document.getElementById("image-1-left");
 var imageOneRightBtn = document.getElementById("image-1-right");
 
@@ -213,5 +215,47 @@ function slidetoImageOneFromFive(){
     sliderImagesFive.style.display="none";
     sliderImagesOne.style.display="flex";
 };
+
+sliderImagesOne.addEventListener("click", changeActiveImgOne);
+
+function changeActiveImgOne(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src;
+    }
+};
+sliderImagesTwo.addEventListener("click", changeActiveImgTwo);
+
+function changeActiveImgTwo(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src;
+    }
+};
+sliderImagesThree.addEventListener("click", changeActiveImgThree);
+
+function changeActiveImgThree(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src;
+    }
+};
+sliderImagesFour.addEventListener("click", changeActiveImgFour);
+
+function changeActiveImgFour(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src;
+    }
+};
+sliderImagesFive.addEventListener("click", changeActiveImgFive);
+
+function changeActiveImgFive(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src;
+    }
+};
+
 
 /*MEDIA IMAGE SLIDER END*/
